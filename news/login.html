@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script type="text/javascript" src="js/checkCode.js"></script><!-- 新增 -->
+</head>
+<body>
+	<div class="head">
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+			<div class="text">
+			<h1>欢迎登陆热点新闻,湖南新闻官方服务平台</h1>
+			<p>随时 随地 查阅身边的事</p>
+		</div>
+	</div><!-- head头部 -->
+	<div class="content">
+		<div class="contentL">
+			<img src="images/56fe508757a0d_1024.jpg" alt="" />
+		</div>
+		<div class="contentR">
+			<div class="contentRtit">
+				<a href="#" class="return">返回网站首页</a>
+				<span>还不是热点新闻会员？</span>
+				<a href="#" class="regist">立即注册>></a>
+			</div>
+			<form action="" class="loginForm">
+				<input type="text" placeholder="用户名/手机号" class="name" />
+				<input type="password" placeholder="密码" class="pass" />
+				<input type="text" placeholder="验证码" class="text" id = "input" /><!-- 修改 -->
+				<div class="validator"><!-- 修改 -->
+					<!-- 验证码开始 -->
+					<input type = "button" id="code" onclick="createCode2()" class="validatorPic" style="width: 120px;height: 37px;background: #ccc;margin-top: 0px;color: #fff;font-size: 35px;line-height: 17px;text-align: center;letter-spacing: 0px;padding: 0;" />  
+					<!-- 验证码结束 -->
+				</div>
+				<a href="#" class="forget">忘记密码？</a>
+				<button class="btnLogin" onclick = "validate()">登陆</button><!-- 修改 -->
+			</form>
+		</div>
+	</div><!-- content内容 -->
+	<div class="ad">
+	</div><!-- ad广告 -->
+	<div class="foot">
+		<p>Copyright&nbsp;&copy;&nbsp;版权所有&nbsp;&nbsp;湘ICP备14018719号<span>热点新闻</span></p>
+		<p>客服热线：4008099998，0731-84121048  </p>
+	</div>
+</body>
+</html>

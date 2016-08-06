@@ -1,0 +1,206 @@
+body{
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: #5c5c5c;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../../font/bg_icon/iconfont.eot'); /* IE9*/
+    src: url('../../font/bg_icon/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../font/bg_icon/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../../font/bg_icon/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../../font/bg_icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 10px;
+}
+.bg_nav{
+	width: 1366px;
+	margin: 0 auto;
+	height: 80px;
+	overflow: hidden;
+	margin: 10px 0;
+}
+.bg_nav img{
+	display: block;
+	float: left;
+	margin-left: 40px;
+}
+.bg_nav .bg_Tit{
+	font-size: 40px;
+	font-weight: bold;
+	width: 500px;
+	float: right;
+	color: #5c5c5c;
+	margin-right: 40px;
+	margin-top: 30px;
+}
+.bg_menuBox{
+	height: 60px;
+	background: #393F4F
+}
+.bg_menu{
+	width: 1366px;
+	margin: 0 auto;
+	height: 60px;
+	line-height: 60px;
+}
+.bg_menu li{
+	float: left;
+	text-align: center;
+}
+
+.bg_menu li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	width: 116px;
+	height:60px;
+}
+.bg_menu li a.bg_on{
+	width: 206px;
+}
+.bg_on,
+.bg_menu li a:hover{
+	background: #FF4040;
+}
+.bg_content{
+	width: 1366px;
+	margin: 0 auto;
+}
+.bg_column{
+	width: 206px;
+	background: #F2F0F1;
+	float: left;
+}
+.bg_column ul li{
+	width: 206px;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	border-bottom: 1px solid #D8D6D7;
+}
+.bg_column ul li a{
+	padding-left: 30px;
+	display: block;
+	width: 176px;
+	height: 50px;
+	color: #5B6378
+}
+.bg_column ul li a.on,
+.bg_column ul li a:hover{
+	background: #FF4040;
+	width: 185px;
+	color: #fff;
+	border-bottom: 1px solid #FF4040;
+}
+.bg_contentR{
+	width: 1160px;
+	float: left;
+}
+.bg_contentR table{
+	margin: 30px;
+	width: 1100px;
+}
+.bg_contentR table tr{
+	height: 40px;
+	text-align: center;
+}
+.bg_contentR table tr th{
+	background: #FBFCE2;
+	height: 40px;
+	text-align: center;
+	border: 1px solid #CFCFCF;
+}
+.bg_contentR table tr td{
+	border: 1px solid #CFCFCF;
+}
+.bg_contentR table tr td a{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.bg_btn{
+	float: right;
+	margin-right: 30px;
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	border: 1px solid #CFCFCF;
+	background: #FBFCE2;
+}
+.bg_page{
+	width: 1100px;
+	margin:-10px auto 0;
+	text-align: center;
+}
+.bg_page a{
+	display: inline-block;
+	padding: 0 5px;
+}
+.bg_page a.on{
+	color: #FF4040;
+}
+.bg_article{
+	margin: 30px;
+	width: 1100px;
+	border: 1px solid #CFCFCF;
+}
+.bg_articleList{
+	border-bottom: 1px dashed #CFCFCF;
+	line-height: 40px;
+}
+.bg_articleList label{
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	margin-right: 20px;
+}
+.bg_articleList input[type=text]{
+	display: inline-block;
+	width: 500px;
+	height: 25px;
+	padding: 0 10px;
+	font-size: 14px;
+	margin: 10px 0;
+}
+.bg_articleList select{
+	display: inline-block;
+	width: 150px;
+	height: 25px;
+}
+.bg_articleList button{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	border: none;
+	margin-left: 30px;
+	background: #FF4040;
+	color: #fff;
+	font-size: 16px;
+}
+.bg_articleList textarea{
+	display: inline-block;
+	width: 850px;
+	height: 500px;
+	vertical-align: middle;
+	margin: 20px 0;
+	font-size: 16px;
+}
+.bg_btn{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	border: none;
+	margin-left: 30px;
+	background: #FF4040;
+	color: #fff;
+	font-size: 16px;
+}

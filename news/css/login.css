@@ -1,0 +1,346 @@
+@font-face {
+	font-family: 'iconfont';
+	src: url('../font/regist/iconfont.eot'); /* IE9*/
+	src: url('../font/regist/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			 url('../font/regist/iconfont.woff') format('woff'), /* chrome、firefox */
+			 url('../font/regist/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			 url('../font/regist/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+	margin-right:5px;
+	font-family:"iconfont" !important;
+	font-size:16px;
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+body{
+	background: url(../images/bg.jpg);
+	font-family: "微软雅黑";
+	color: #423626;
+}
+a{
+	text-decoration: none;
+	color: #423626;
+}
+/*head  logo*/
+.head{
+	height: 160px;
+	overflow: hidden;
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.head .logo{
+	float:left;
+	height: 54px;
+	width: 205px;
+	color: #423626;
+	margin: 45px 75px 45px 0;
+}
+.head .logo img{
+	display: inline-block;
+	float: left;
+}
+.head .text{
+	width: 500px;
+	float: left;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.head .text h1{
+	font-size: 24px;
+	color: #b20505;
+	margin-top: 45px;
+}
+.head .text p{
+	font-size: 16px;
+	color: #5d5c5c;
+	margin-top: 3px;
+}
+/* content */
+.content{
+	width: 1200px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 2px 5px 10px 2px #888888;
+	overflow: hidden;
+}
+.content .contentL{
+	float:left;
+	width: 600px;
+	padding:40px;
+	border-right: 1px solid #eaeaea;
+	margin:30px 0;
+}
+.content .contentL img{
+	display: block;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+}
+.content .contentR{
+	float: left;
+	width: 355px;
+	padding: 30px 60px;
+}
+.content .contentR .contentRtit{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 40px;
+}
+.content .contentR .contentRtit .return{
+	font-size: 16px;
+	color: #3c3b3b;
+	font-weight: bold;
+	border-bottom: 2px solid #b20707;
+	line-height: 60px;
+	display: inline-block;
+}
+.content .contentR .contentRtit span{
+	font-size: 12px;
+	color: #848282;
+	margin: 0 17px 0 40px;
+}
+.content .contentR .contentRtit .regist{
+	font-size: 12px;
+	color: #b20707;
+	font-weight: bold;
+}
+.content .contentR .contentRtit .regist:hover{
+	text-decoration: underline;
+}
+.content .contentR .loginForm input{
+	width: 310px;
+	height: 18px;
+	display: block;
+	background: url(../images/icon.png) no-repeat;
+	padding: 10px 10px 10px 30px;
+	margin: 30px 0;
+	border:1px solid #E5E4E3;
+}
+.content .contentR .loginForm input.name{
+	background-position:5px 10px;
+}
+.content .contentR .loginForm input.pass{
+	background-position:5px -25px;
+}
+.content .contentR .loginForm input.text{
+	background-position:5px -59px;
+	width: 140px;
+}
+.content .contentR .loginForm .validator{
+	width: 120px;
+	height: 37px;
+	border:1px solid #E5E4E3;
+	float: right;
+	margin-top: -70px;
+	text-align: center;
+	line-height: 37px;
+}
+.content .contentR .loginForm .forget{
+	float: right;
+	color: #0568c3;
+	margin-bottom: 30px;
+}
+.content .contentR .loginForm .forget:hover{
+	text-decoration: underline;
+}
+.content .contentR .loginForm .btnLogin{
+	border:none;
+	background: #ff7200;
+	display: block;
+	width: 355px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+.content .contentR .loginForm .btnLogin:hover{
+	background: #e16807;
+}
+/*ad*/
+.ad{
+	width: 1000px;
+	height: 90px;
+	background: url(../images/ad4.jpg) no-repeat;
+	margin: 40px auto 0;
+	border-bottom: 1px solid #d5d5d5;
+	padding-bottom: 40px;
+}
+.foot{
+	text-align: center;
+	line-height: 40px;
+}
+.foot p span{
+	margin: 0 20px;
+}
+/* regist.html */
+.content .registConL{
+	width: 400px;
+	float: left;
+	padding: 0 50px;
+	margin: 30px 0;
+}
+.content .registConL .registConLTit{
+	height: 60px;
+	width: 400px;
+	line-height: 60px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.content .registConL .registConLTit .return{
+	font-size: 16px;
+	font-weight: bold;
+	color: #3c3b3b;
+	border-bottom: 2px solid #b20707;
+	display: inline-block;
+}
+.content .registConL .registConLTit span{
+	font-size: 12px;
+	color: #848282;
+	margin: 0 17px 0 90px;
+}
+.content .registConL .registConLTit .login{
+	font-size: 12px;
+	font-weight: bold;
+	color: #b20707;
+}
+.content .registConL .registConLTit .login:hover{
+	text-decoration: underline;
+}
+.content .registConL .registConLUl{
+	width: 400px;
+	margin-top: 30px;
+}
+.content .registConL .registConLUl a{
+	display: inline-block;
+	width: 200px;
+	height:46px;
+	background: #e8e6e6;
+	color: #413f3f;
+	line-height: 46px;
+	float: left;
+	text-align: center;
+}
+.content .registConL .registConLUl a.on{
+	background: url(../images/reg-title-bg-hove.png) no-repeat;
+	height: 55px;
+	color: #fff;
+}
+.content .registConL .registForm{
+	clear: both;
+	overflow: hidden;
+}
+.content .registConL .registForm p,.content .registConL .registForm h5{
+	font-size: 12px;
+	color: #b20707;
+	margin-top: 10px;
+}
+.content .registConL .registForm p{
+	text-align: right;
+}
+.content .registConL .registForm label{
+	width: 70px;
+	float: left;
+	text-align: right;
+	display: block;
+	font-size: 12px;
+	line-height: 55px;
+}
+.content .registConL .registForm input{
+	display: block;
+	float: left;
+	width: 300px;
+	height: 15px;
+	padding: 10px;
+	font-size: 12px;
+	margin: 8px 0;
+}
+.content .registConL .registForm span{
+	color: #b20707;
+}
+.content .registConL .registForm .prompt{
+	color:#FCD309;
+}
+.content .registConL .registForm .error{
+	color: #EA5046;
+}
+.content .registConL .registForm .ok{
+	color: #4AB848;
+}
+.content .registConL .registForm button{
+	width: 400px;
+	height: 45px;
+	border:none;
+	background: #d50606;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 30px 0 30px;
+}
+.content .registConR{
+	width: 600px;
+	height: 400px;
+	float: left;
+	padding: 40px;
+	border-left: 1px solid #eaeaea;
+	margin: 70px 0;
+}
+.content .registConR img{
+	display: block;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+}
+/*学员认证*/
+.content .registConL .assessForm{
+	clear: both;
+	padding-top: 20px;
+}
+.content .registConL .assessForm label{
+	width: 70px;
+	float: left;
+	text-align: right;
+	display: block;
+	font-size: 12px;
+	line-height: 55px;
+}
+.content .registConL .assessForm input{
+	display: block;
+	float: right;
+	width: 290px;
+	height: 15px;
+	padding: 10px;
+	font-size: 12px;
+	margin: 8px 0;
+}
+.content .registConL .assessForm button{
+	width: 400px;
+	height: 45px;
+	border:none;
+	background: #d50606;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 30px 0 30px;
+}
+.content .registConL .assessForm .prompt{
+	color:#FCD309;
+}
+.content .registConL .assessForm .error{
+	color: #EA5046;
+}
+.content .registConL .assessForm .ok{
+	color: #4AB848;
+}
+.content .registConL .assessForm p{
+	text-align: right;
+	font-size: 12px;
+	color: #b20707;
+}
+/*验证码*/

@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+	<div class="head">
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+		<div class="text">
+			<h1>欢迎登陆热点新闻,湖南新闻官方服务平台</h1>
+			<p>随时 随地 查阅身边的事</p>
+		</div>
+	</div><!-- head头部 -->
+	<div class="content">
+		<div class="registConL">
+			<div class="registConLTit">
+				<a href="#" class="return">返回网站首页</a>
+				<span>已经是热点新闻会员？</span>
+				<a href="#" class="login">立即登录>></a>
+			</div>
+			<form action="" class="registForm" id="regist">
+				<h5>*为必填项</h5>
+				<div>
+					<p><!-- 放入提示信息 --></p>
+					<!-- <i class="iconfont prompt">&#xe657;</i>提示 -->
+					<!-- <i class="iconfont error">&#xe60c;</i>错误 -->
+					<!-- <i class="iconfont ok">&#xe644;</i>正确 -->
+					<label for=""><span>*</span>用户名：</label>
+					<input type="text" placeholder="请输入用户名" />
+				</div>
+			
+				<div>
+					<p><!-- 放入提示信息 --></p>
+					<label for=""><span>*</span>手机号码：</label>
+					<input type="text" placeholder="请输入手机号" />
+				</div>
+			
+				<div>
+					<p><!-- 放入提示信息 --></p>
+					<label for=""><span>*</span>密码：</label>
+					<input type="password" placeholder="请输入密码" />
+				</div>
+			
+				<div>
+					<p><!-- 放入提示信息 --></p>
+					<label for=""><span>*</span>重复密码：</label>
+					<input type="password" placeholder="请输入确认密码" />
+				</div>
+			
+				<div>
+					<p><!-- 放入提示信息 --></p>
+					<label for=""><span>*</span>证件号码：</label>
+					<input type="text" placeholder="请输入证件号码" />
+				</div>
+			
+				<div>
+					<label for="">邮箱：</label>
+					<input type="text" placeholder="请输入邮箱" />
+				</div>
+			
+				<button>注册</button>
+			</form>
+		</div>
+		<div class="registConR">
+			<img src="images/56fe508757a0d_1024.jpg" alt="" />
+		</div>
+	</div><!-- content内容 -->
+	<div class="ad">
+	</div><!-- ad广告 -->
+	<div class="foot">
+		<p>Copyright&nbsp;&copy;&nbsp;版权所有&nbsp;&nbsp;湘ICP备14018719号<span>热点新闻</span></p>
+		<p>客服热线：4008099998，0731-84121048  </p>
+	</div>
+</body>
+<script type="text/javascript">
+function getLength(str){//str我们要传进一个字符串,判断是否有汉字,如果有汉字替换为两个英文字母
+	return str.replace(/[^\x00-\xff]/g,"xx").length;//\x00-\xff单字节
+}
+	window.onload=function(){
+		/*校验开始*/
+		/*将input标签抓取出来*/
+		/*会员注册校验*/
+		var name_length=0;//全局变量
+		var aInput=document.getElementById('regist').getElementsByTagName('input');
+		var oName=aInput[0];
+		var oTel=aInput[1];
+		var oPass=aInput[2];
+		var oRepass=aInput[3];
+		var oId=aInput[4];
+		var oMail=aInput[5];
+		var aP=document.getElementById('regist').getElementsByTagName('p');
+		var name_msg=aP[0];
+		var tel_msg=aP[1];
+		var pass_msg=aP[2];
+		var repass_msg=aP[3];
+		var id_msg=aP[4];
+		var mail_msg=aP[5];
+		//1.校验用户名
+			//\u4e00-\u9fa5中文字符
+			var re=/[^\w\u4e00-\u9fa5]/g;
+			//鼠标聚焦事件(鼠标放上去显示提示文字)
+			oName.onfocus=function(){
+				name_msg.style.display='block';
+				name_msg.innerHTML='<i class="iconfont prompt">&#xe657;</i>5-25字符，一个汉字为两个字符，推荐使用中文名.';
+			}
+			oName.onkeyup=function(){
+				name_length=getLength(this.value);
+			}
+			oName.onblur=function(){
+				//含有非法字符
+				var re=/[^\w\u4e00-\u9fa5]/g;
+				if(re.test(this.value)){
+					name_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>含有非法字符';
+				}
+				//不能为空
+				else if(this.value==""){
+					name_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>不能为空';
+				}
+				//长度超过25个字符
+				else if(name_length>25){
+					name_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>长度超过25个字符';
+				}
+				//长度不小于6
+				else if(name_length<6){
+					name_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>长度少于6个字符';
+				}
+				else{
+					name_msg.innerHTML='<i class="iconfont ok">&#xe644;</i>';
+				}
+			}
+		//2.校验手机号
+			oTel.onfocus=function(){
+				tel_msg.style.display='block';
+				tel_msg.innerHTML='<i class="iconfont prompt">&#xe657;</i>11位数字，以1开头';
+			}
+			oTel.onblur=function(){
+				var re=/^(13[0-9]|15[0|3|6|7|8|9]|18[8|9])\d{8}$/;
+				if(re.test(this.value)){
+					tel_msg.innerHTML='<i class="iconfont ok">&#xe644;</i>';
+				}
+				else if(this.value==""){
+					tel_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>不能为空';
+				}
+				else{
+					tel_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>格式不对';
+				}
+			}
+		//3.校验密码
+			oPass.onfocus=function(){
+				pass_msg.style.display='block';
+				pass_msg.innerHTML='<i class="iconfont prompt">&#xe657;</i>只能输入6-20个字母、数字、下划线';
+			}
+			oPass.onblur=function(){
+				var re=/^[0-9A-Za-z]{6,20}$/;
+				if(re.test(this.value)){
+					pass_msg.innerHTML='<i class="iconfont ok">&#xe644;</i>';
+				}
+				else if(this.value==""){
+					pass_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>不能为空';
+				}
+				else{
+					pass_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>密码格式不对';
+				}
+			}
+		//4.校验确认密码
+			oRepass.onblur=function(){
+				if(this.value!=oPass.value){
+					repass_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>两次密码不一致';
+				}
+				else{
+					repass_msg.innerHTML='<i class="iconfont ok">&#xe644;</i>';
+				}
+			}
+		//5.校验证件号码
+			oId.onfocus=function(){
+				id_msg.style.display='block';
+				id_msg.innerHTML='<i class="iconfont prompt">&#xe657;</i>身份证号码';
+			}
+			oId.onblur=function(){
+				var re=/^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+				if(re.test(this.value)){
+					id_msg.innerHTML='<i class="iconfont ok">&#xe644;</i>';
+				}
+				else{
+					id_msg.innerHTML='<i class="iconfont error">&#xe60c;</i>无效身份证号码';
+				}
+			}
+	}
+</script>
+</html>
